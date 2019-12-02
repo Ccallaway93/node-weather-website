@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     //  async call that is similar to request in node
     //  This takes the info from the api and puts it in Client-Side JS
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
 
         response.json().then((data) => {
             if(data.error){
